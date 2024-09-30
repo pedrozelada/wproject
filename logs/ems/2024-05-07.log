@@ -1,0 +1,45 @@
+2024-05-07 22:44:03.247 [RMI TCP Connection(227)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-05-07 22:44:03.268 [RMI TCP Connection(227)-127.0.0.1] DEBUG o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-05-07 22:44:03.286 [RMI TCP Connection(227)-127.0.0.1] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@314b8f2d, started on Tue May 07 19:01:13 BOT 2024
+2024-05-07 22:44:03.387 [RMI TCP Connection(227)-127.0.0.1] DEBUG o.s.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147482623
+2024-05-07 22:44:03.417 [RMI TCP Connection(227)-127.0.0.1] DEBUG o.s.context.support.DefaultLifecycleProcessor - Bean 'webServerGracefulShutdown' completed its stop procedure
+2024-05-07 22:44:03.418 [RMI TCP Connection(227)-127.0.0.1] DEBUG o.s.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147481599
+2024-05-07 22:44:03.476 [RMI TCP Connection(227)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2024-05-07 22:44:03.477 [RMI TCP Connection(227)-127.0.0.1] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-05-07 22:44:03.494 [RMI TCP Connection(227)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-05-07 22:44:03.530 [RMI TCP Connection(227)-127.0.0.1] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+2024-05-07 22:44:03.564 [RMI TCP Connection(227)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-05-07 22:44:03.585 [RMI TCP Connection(227)-127.0.0.1] DEBUG o.s.context.support.DefaultLifecycleProcessor - Bean 'webServerStartStop' completed its stop procedure
+2024-05-07 22:44:03.585 [RMI TCP Connection(227)-127.0.0.1] DEBUG o.s.context.support.DefaultLifecycleProcessor - Stopping beans in phase -2147483647
+2024-05-07 22:44:03.587 [RMI TCP Connection(227)-127.0.0.1] DEBUG o.s.context.support.DefaultLifecycleProcessor - Bean 'springBootLoggingLifecycle' completed its stop procedure
+2024-05-07 22:44:03.596 [RMI TCP Connection(227)-127.0.0.1] DEBUG o.s.d.redis.listener.RedisMessageListenerContainer - Stopped RedisMessageListenerContainer
+2024-05-07 22:44:03.623 [RMI TCP Connection(227)-127.0.0.1] DEBUG io.lettuce.core.AbstractRedisClient - Initiate shutdown (100, 100, MILLISECONDS)
+2024-05-07 22:44:03.669 [RMI TCP Connection(227)-127.0.0.1] DEBUG io.lettuce.core.resource.DefaultClientResources - Initiate shutdown (0, 2, SECONDS)
+2024-05-07 22:44:03.684 [RMI TCP Connection(227)-127.0.0.1] DEBUG i.l.core.resource.DefaultEventLoopGroupProvider - Initiate shutdown (0, 2, SECONDS)
+2024-05-07 22:44:03.694 [RMI TCP Connection(227)-127.0.0.1] DEBUG o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2024-05-07 22:44:03.696 [RMI TCP Connection(227)-127.0.0.1] DEBUG o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2024-05-07 22:44:03.697 [RMI TCP Connection(227)-127.0.0.1] DEBUG o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-07 22:44:03.698 [RMI TCP Connection(227)-127.0.0.1] INFO  taller1.grupo.vueadmin.common.utils.SpringContextHolder - 清除SpringContextHolder中的ApplicationContext:org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@314b8f2d, started on Tue May 07 19:01:13 BOT 2024
+2024-05-07 22:44:03.702 [RMI TCP Connection(227)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-07 22:44:03.703 [RMI TCP Connection(227)-127.0.0.1] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2024-05-07 22:44:03.705 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6da9f9ed: (connection evicted)
+2024-05-07 22:44:03.706 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@636e1a28: (connection evicted)
+2024-05-07 22:44:03.707 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4599bd4c: (connection evicted)
+2024-05-07 22:44:03.708 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7ee65c2b: (connection evicted)
+2024-05-07 22:44:03.709 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7fb15aae: (connection evicted)
+2024-05-07 22:44:03.710 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7176bb28: (connection evicted)
+2024-05-07 22:44:03.711 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4e9a61cc: (connection evicted)
+2024-05-07 22:44:03.712 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@405d966f: (connection evicted)
+2024-05-07 22:44:03.713 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5c7579a4: (connection evicted)
+2024-05-07 22:44:03.715 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@52b29c5a: (connection evicted)
+2024-05-07 22:44:03.717 [RMI TCP Connection(227)-127.0.0.1] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2024-05-07 22:44:03.717 [RMI TCP Connection(227)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
